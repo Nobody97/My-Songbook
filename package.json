@@ -1,0 +1,20 @@
+{
+  "name": "my-songbook",
+  "version": "1.0.0",
+  "description": "Beispielanwendung in der Vorlesung Webprogrammierung",
+  "main": "index.js",
+  "scripts": {
+  "clean": "node scripts/clean.js",
+  "build": "npm run clean; parcel build src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
+  "watch": "npm run clean; parcel watch src/*.html --public-url . --detailed-report --experimental-scope-hoisting",
+  "start": "parcel src/index.html --open"
+},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.10.1"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.2"
+  }
+}
